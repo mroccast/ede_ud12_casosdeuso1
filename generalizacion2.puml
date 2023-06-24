@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:Cliente: -> (Reservar vuelo)
+
+:Cliente VIP: -> (Elegir asientos)
+
+:Cliente: <|-- :Cliente VIP:
+@enduml
+
