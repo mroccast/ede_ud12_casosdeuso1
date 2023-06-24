@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+usecase SD as "Sacar Dinero
+---
++ solicitud hecha"
+
+usecase RT as "Retener tarjeta"
+
+SD <. RT : extend
+
+note "Description\n--\ncondicion:\n\t{ historia sospechosa }\npunto de extension:\n\tsolicitud hecha" as NT
+
+SD -- NT
+NT -- RT
+
+@enduml
