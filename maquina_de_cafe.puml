@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+(Meter dinero) as Md
+(Pedir Azucar) as Pa
+(Pedir Producto) as Pp
+(Cancelar) as C
+(Devolver Dinero) as Dd
+:Cliente: -- Md 
+:Cliente: -- Pa
+:Cliente: -- Pp
+:Cliente: -- C 
+Pp .> Dd : include
+C .> Dd : include
+@enduml
