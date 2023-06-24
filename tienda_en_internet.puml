@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:new Actor: as AC
+AC -- (Identificarse)
+AC -- (Pagar)
+AC -- (Elegir mensajero)
+AC -- (Confirmar)
+
+(Identificarse) <. (Registrarse) : extend
+(Pagar) <|-- (Pagar con tarjeta)
+(Pagar) <|-- (Pagar con transferencia)
+
+@enduml
