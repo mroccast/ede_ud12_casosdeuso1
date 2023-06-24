@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:Usuario: as USER
+:Administrador: as ADMIN
+
+(Iniciar sesion) as IS
+(Recuperar contraseña) as RC
+(Modificar contraseña) as MC
+(Cerrar sesion) as CS
+(Registrar usuario) as RU
+(Instalar programa) as IP
+
+USER <|-- ADMIN
+
+USER -- IS
+USER -- RC
+USER -- MC
+USER -- CS
+
+ADMIN -- RU
+ADMIN -- IP
+@enduml
