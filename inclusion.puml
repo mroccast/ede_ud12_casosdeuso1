@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+(Confirmar Pedido) as CoP
+(Cancelar Pedido) as CaP
+(Devolver cambio) as DC
+:Cliente: -- CoP
+:Cliente: -- CaP
+CoP .> DC : include
+CaP .> DC : include
+@enduml
