@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:Ciudadano: -> (Registrar entrada)
+
+:Ciudadano Extranjero: -> (Tomar huellas)
+
+:Ciudadano: <|-- :Ciudadano Extranjero:
+
+(Tomar huellas) .> (Registrar entrada) : extend
+@enduml
+
