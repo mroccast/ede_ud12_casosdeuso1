@@ -1,0 +1,7 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+(Pagar) as P
+(Pagar con Targeta) --|> P
+(Pagar en efectivo) --|> P
+@enduml
